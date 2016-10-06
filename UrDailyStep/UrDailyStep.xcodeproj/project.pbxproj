@@ -24,6 +24,9 @@
 		F07109AA1DA6655D00EE06AD /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = F07109A91DA6655D00EE06AD /* Assets */; };
 		F07109AC1DA686C600EE06AD /* ExerciseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07109AB1DA686C600EE06AD /* ExerciseItem.swift */; };
 		F0AA35C11DA6D9DD007339AC /* NiveauItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AA35C01DA6D9DD007339AC /* NiveauItem.swift */; };
+		F0AA35C31DA6DF97007339AC /* ActualityItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AA35C21DA6DF97007339AC /* ActualityItem.swift */; };
+		F0AA35C51DA6E26A007339AC /* EventObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AA35C41DA6E26A007339AC /* EventObject.swift */; };
+		F0AA35C71DA6F893007339AC /* ProfilObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AA35C61DA6F893007339AC /* ProfilObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		F07109A91DA6655D00EE06AD /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		F07109AB1DA686C600EE06AD /* ExerciseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseItem.swift; sourceTree = "<group>"; };
 		F0AA35C01DA6D9DD007339AC /* NiveauItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiveauItem.swift; sourceTree = "<group>"; };
+		F0AA35C21DA6DF97007339AC /* ActualityItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActualityItem.swift; sourceTree = "<group>"; };
+		F0AA35C41DA6E26A007339AC /* EventObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventObject.swift; sourceTree = "<group>"; };
+		F0AA35C61DA6F893007339AC /* ProfilObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilObject.swift; sourceTree = "<group>"; };
 		F5E3B776456514C81848F94B /* Pods-UrDailyStep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrDailyStep.release.xcconfig"; path = "Pods/Target Support Files/Pods-UrDailyStep/Pods-UrDailyStep.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +109,7 @@
 				2CE517131DA63CD100B1D071 /* controller */,
 				F07109AB1DA686C600EE06AD /* ExerciseItem.swift */,
 				F0AA35C01DA6D9DD007339AC /* NiveauItem.swift */,
+				F0AA35C21DA6DF97007339AC /* ActualityItem.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -142,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				F0143F3C1DA6C6C200AE04E7 /* ExerciseObject.swift */,
+				F0AA35C41DA6E26A007339AC /* EventObject.swift */,
+				F0AA35C61DA6F893007339AC /* ProfilObject.swift */,
 			);
 			name = object;
 			sourceTree = "<group>";
@@ -288,9 +297,12 @@
 				F0AA35C11DA6D9DD007339AC /* NiveauItem.swift in Sources */,
 				F07109AC1DA686C600EE06AD /* ExerciseItem.swift in Sources */,
 				F07109A81DA6653A00EE06AD /* YTPlayerView.m in Sources */,
+				F0AA35C31DA6DF97007339AC /* ActualityItem.swift in Sources */,
 				2CE5170F1DA63C3900B1D071 /* ProfileViewController.swift in Sources */,
 				2C5D59031DA6470100A0CD75 /* SubscribeViewController.swift in Sources */,
 				2CE517111DA63CC500B1D071 /* NewsViewController.swift in Sources */,
+				F0AA35C71DA6F893007339AC /* ProfilObject.swift in Sources */,
+				F0AA35C51DA6E26A007339AC /* EventObject.swift in Sources */,
 				2CE5170D1DA63C1400B1D071 /* HomePageViewController.swift in Sources */,
 				F07109A31DA664F300EE06AD /* ExercisePageViewController.swift in Sources */,
 				F0143F3D1DA6C6C200AE04E7 /* ExerciseObject.swift in Sources */,
