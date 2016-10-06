@@ -21,6 +21,16 @@ class SubscribeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onSubscribe(_ sender: AnyObject) {
+        let alertController = UIAlertController(title: "", message: "Je souhaite recevoir des notifications de rappel quotidiens?", preferredStyle: .alert)
+        
+        let yesAction = UIAlertAction(title: "Oui", style: .default, handler: nil)
+        let noAction = UIAlertAction(title:"Non",style: .cancel, handler: nil)
+        alertController.addAction(yesAction)
+        alertController.addAction(noAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

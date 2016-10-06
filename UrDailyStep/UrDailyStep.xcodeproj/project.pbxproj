@@ -50,6 +50,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C5D59041DA6740E00A0CD75 /* component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = component;
+			sourceTree = "<group>";
+		};
 		2CE516EE1DA5657800B1D071 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +89,7 @@
 		2CE517121DA63CCB00B1D071 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				2C5D59041DA6740E00A0CD75 /* component */,
 				2CE516FE1DA5657800B1D071 /* Main.storyboard */,
 				2CE517031DA5657800B1D071 /* LaunchScreen.storyboard */,
 				2CE517131DA63CD100B1D071 /* controller */,
