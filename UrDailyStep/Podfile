@@ -8,6 +8,7 @@ target 'UrDailyStep' do
   pod 'Alamofire', '~> 4.0'
   pod 'TextFieldEffects'
   pod 'BEMCheckBox'
+  pod 'iCarousel'
   # Pods for UrDailyStep
 
 end

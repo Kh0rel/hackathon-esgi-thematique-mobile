@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C03B2E11DA6890400E0FFD4 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03B2E01DA6890400E0FFD4 /* MarketViewController.swift */; };
+		2C03B2E71DA6939E00E0FFD4 /* MarketDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03B2E61DA6939E00E0FFD4 /* MarketDetailViewController.swift */; };
+		2C03B2ED1DA696F200E0FFD4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C03B2EC1DA696F200E0FFD4 /* QuartzCore.framework */; };
+		2C03B2F01DA69CB500E0FFD4 /* MarketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03B2EF1DA69CB500E0FFD4 /* MarketTableViewCell.swift */; };
+		2C03B2F41DA6A02500E0FFD4 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03B2F31DA6A02500E0FFD4 /* Product.swift */; };
 		2C5D59031DA6470100A0CD75 /* SubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5D59021DA6470100A0CD75 /* SubscribeViewController.swift */; };
 		2CE516FB1DA5657800B1D071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE516FA1DA5657800B1D071 /* AppDelegate.swift */; };
 		2CE516FD1DA5657800B1D071 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE516FC1DA5657800B1D071 /* LoginViewController.swift */; };
@@ -22,6 +27,11 @@
 
 /* Begin PBXFileReference section */
 		1754944B123AB902CA452C2C /* Pods_UrDailyStep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrDailyStep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C03B2E01DA6890400E0FFD4 /* MarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+		2C03B2E61DA6939E00E0FFD4 /* MarketDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketDetailViewController.swift; sourceTree = "<group>"; };
+		2C03B2EC1DA696F200E0FFD4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2C03B2EF1DA69CB500E0FFD4 /* MarketTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell.swift; sourceTree = "<group>"; };
+		2C03B2F31DA6A02500E0FFD4 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		2C5D59021DA6470100A0CD75 /* SubscribeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
 		2CE516F71DA5657800B1D071 /* UrDailyStep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrDailyStep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE516FA1DA5657800B1D071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C03B2ED1DA696F200E0FFD4 /* QuartzCore.framework in Frameworks */,
 				A7BD9E69F28DECF6B5F1B47E /* Pods_UrDailyStep.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C03B2EE1DA69C9600E0FFD4 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				2C03B2EF1DA69CB500E0FFD4 /* MarketTableViewCell.swift */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		2C03B2F11DA6A00500E0FFD4 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				2C03B2F31DA6A02500E0FFD4 /* Product.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
 		2C5D59041DA6740E00A0CD75 /* component */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +105,7 @@
 		2CE516F91DA5657800B1D071 /* UrDailyStep */ = {
 			isa = PBXGroup;
 			children = (
+				2C03B2F11DA6A00500E0FFD4 /* models */,
 				2CE517121DA63CCB00B1D071 /* view */,
 				2CE516FA1DA5657800B1D071 /* AppDelegate.swift */,
 				2CE517011DA5657800B1D071 /* Assets.xcassets */,
@@ -100,12 +128,15 @@
 		2CE517131DA63CD100B1D071 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				2C03B2EE1DA69C9600E0FFD4 /* cell */,
 				2CE5170C1DA63C1400B1D071 /* HomePageViewController.swift */,
 				2CE5170E1DA63C3900B1D071 /* ProfileViewController.swift */,
 				2CE517101DA63CC500B1D071 /* NewsViewController.swift */,
 				2CE516FC1DA5657800B1D071 /* LoginViewController.swift */,
 				2CE517141DA63D1A00B1D071 /* PerformanceViewController.swift */,
 				2C5D59021DA6470100A0CD75 /* SubscribeViewController.swift */,
+				2C03B2E01DA6890400E0FFD4 /* MarketViewController.swift */,
+				2C03B2E61DA6939E00E0FFD4 /* MarketDetailViewController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -113,6 +144,7 @@
 		748AA123BF65BFECF6FB671D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C03B2EC1DA696F200E0FFD4 /* QuartzCore.framework */,
 				1754944B123AB902CA452C2C /* Pods_UrDailyStep.framework */,
 			);
 			name = Frameworks;
@@ -251,8 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C03B2E11DA6890400E0FFD4 /* MarketViewController.swift in Sources */,
 				2CE516FD1DA5657800B1D071 /* LoginViewController.swift in Sources */,
 				2CE516FB1DA5657800B1D071 /* AppDelegate.swift in Sources */,
+				2C03B2F01DA69CB500E0FFD4 /* MarketTableViewCell.swift in Sources */,
+				2C03B2E71DA6939E00E0FFD4 /* MarketDetailViewController.swift in Sources */,
+				2C03B2F41DA6A02500E0FFD4 /* Product.swift in Sources */,
 				2CE5170F1DA63C3900B1D071 /* ProfileViewController.swift in Sources */,
 				2C5D59031DA6470100A0CD75 /* SubscribeViewController.swift in Sources */,
 				2CE517111DA63CC500B1D071 /* NewsViewController.swift in Sources */,
