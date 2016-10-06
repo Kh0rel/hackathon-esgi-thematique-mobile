@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C5D59031DA6470100A0CD75 /* SubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5D59021DA6470100A0CD75 /* SubscribeViewController.swift */; };
 		2CE516FB1DA5657800B1D071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE516FA1DA5657800B1D071 /* AppDelegate.swift */; };
 		2CE516FD1DA5657800B1D071 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE516FC1DA5657800B1D071 /* LoginViewController.swift */; };
 		2CE517001DA5657800B1D071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE516FE1DA5657800B1D071 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		1754944B123AB902CA452C2C /* Pods_UrDailyStep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrDailyStep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C5D59021DA6470100A0CD75 /* SubscribeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
 		2CE516F71DA5657800B1D071 /* UrDailyStep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrDailyStep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE516FA1DA5657800B1D071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CE516FC1DA5657800B1D071 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				2CE517101DA63CC500B1D071 /* NewsViewController.swift */,
 				2CE516FC1DA5657800B1D071 /* LoginViewController.swift */,
 				2CE517141DA63D1A00B1D071 /* PerformanceViewController.swift */,
+				2C5D59021DA6470100A0CD75 /* SubscribeViewController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				2CE516FD1DA5657800B1D071 /* LoginViewController.swift in Sources */,
 				2CE516FB1DA5657800B1D071 /* AppDelegate.swift in Sources */,
 				2CE5170F1DA63C3900B1D071 /* ProfileViewController.swift in Sources */,
+				2C5D59031DA6470100A0CD75 /* SubscribeViewController.swift in Sources */,
 				2CE517111DA63CC500B1D071 /* NewsViewController.swift in Sources */,
 				2CE5170D1DA63C1400B1D071 /* HomePageViewController.swift in Sources */,
 				2CE517151DA63D1A00B1D071 /* PerformanceViewController.swift in Sources */,
