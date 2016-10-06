@@ -7,7 +7,9 @@
 //
 
 import UIKit
-class ProfileViewController: UIViewController {
+import XLPagerTabStrip
+
+class ProfileViewController: ButtonBarPagerTabStripViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,6 +9,7 @@ target 'UrDailyStep' do
   pod 'TextFieldEffects'
   pod 'BEMCheckBox'
   pod 'iCarousel'
+  pod 'XLPagerTabStrip', '~> 2.0'
   # Pods for UrDailyStep
 
 end
