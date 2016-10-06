@@ -18,6 +18,9 @@
 		2CE517111DA63CC500B1D071 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE517101DA63CC500B1D071 /* NewsViewController.swift */; };
 		2CE517151DA63D1A00B1D071 /* PerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE517141DA63D1A00B1D071 /* PerformanceViewController.swift */; };
 		A7BD9E69F28DECF6B5F1B47E /* Pods_UrDailyStep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1754944B123AB902CA452C2C /* Pods_UrDailyStep.framework */; };
+		F07109A31DA664F300EE06AD /* ExercisePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07109A21DA664F300EE06AD /* ExercisePageViewController.swift */; };
+		F07109A81DA6653A00EE06AD /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F07109A71DA6653A00EE06AD /* YTPlayerView.m */; };
+		F07109AA1DA6655D00EE06AD /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = F07109A91DA6655D00EE06AD /* Assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,11 @@
 		2CE517101DA63CC500B1D071 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		2CE517141DA63D1A00B1D071 /* PerformanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceViewController.swift; sourceTree = "<group>"; };
 		2D60C5FCC00F8160B2BB43A0 /* Pods-UrDailyStep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrDailyStep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UrDailyStep/Pods-UrDailyStep.debug.xcconfig"; sourceTree = "<group>"; };
+		F07109A21DA664F300EE06AD /* ExercisePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisePageViewController.swift; sourceTree = "<group>"; };
+		F07109A51DA6653A00EE06AD /* UrDailyStep-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UrDailyStep-Bridging-Header.h"; sourceTree = "<group>"; };
+		F07109A61DA6653A00EE06AD /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		F07109A71DA6653A00EE06AD /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
+		F07109A91DA6655D00EE06AD /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		F5E3B776456514C81848F94B /* Pods-UrDailyStep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrDailyStep.release.xcconfig"; path = "Pods/Target Support Files/Pods-UrDailyStep/Pods-UrDailyStep.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +79,7 @@
 		2CE516F91DA5657800B1D071 /* UrDailyStep */ = {
 			isa = PBXGroup;
 			children = (
+				F07109A41DA6652200EE06AD /* lib */,
 				2CE517121DA63CCB00B1D071 /* view */,
 				2CE516FA1DA5657800B1D071 /* AppDelegate.swift */,
 				2CE517011DA5657800B1D071 /* Assets.xcassets */,
@@ -98,6 +107,7 @@
 				2CE516FC1DA5657800B1D071 /* LoginViewController.swift */,
 				2CE517141DA63D1A00B1D071 /* PerformanceViewController.swift */,
 				2C5D59021DA6470100A0CD75 /* SubscribeViewController.swift */,
+				F07109A21DA664F300EE06AD /* ExercisePageViewController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -117,6 +127,17 @@
 				F5E3B776456514C81848F94B /* Pods-UrDailyStep.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F07109A41DA6652200EE06AD /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F07109A91DA6655D00EE06AD /* Assets */,
+				F07109A61DA6653A00EE06AD /* YTPlayerView.h */,
+				F07109A71DA6653A00EE06AD /* YTPlayerView.m */,
+				F07109A51DA6653A00EE06AD /* UrDailyStep-Bridging-Header.h */,
+			);
+			name = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +176,7 @@
 					2CE516F61DA5657800B1D071 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = D4GMNKX6R5;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -183,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CE517051DA5657800B1D071 /* LaunchScreen.storyboard in Resources */,
+				F07109AA1DA6655D00EE06AD /* Assets in Resources */,
 				2CE517021DA5657800B1D071 /* Assets.xcassets in Resources */,
 				2CE517001DA5657800B1D071 /* Main.storyboard in Resources */,
 			);
@@ -245,10 +268,12 @@
 			files = (
 				2CE516FD1DA5657800B1D071 /* LoginViewController.swift in Sources */,
 				2CE516FB1DA5657800B1D071 /* AppDelegate.swift in Sources */,
+				F07109A81DA6653A00EE06AD /* YTPlayerView.m in Sources */,
 				2CE5170F1DA63C3900B1D071 /* ProfileViewController.swift in Sources */,
 				2C5D59031DA6470100A0CD75 /* SubscribeViewController.swift in Sources */,
 				2CE517111DA63CC500B1D071 /* NewsViewController.swift in Sources */,
 				2CE5170D1DA63C1400B1D071 /* HomePageViewController.swift in Sources */,
+				F07109A31DA664F300EE06AD /* ExercisePageViewController.swift in Sources */,
 				2CE517151DA63D1A00B1D071 /* PerformanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,11 +396,14 @@
 			baseConfigurationReference = 2D60C5FCC00F8160B2BB43A0 /* Pods-UrDailyStep.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = D4GMNKX6R5;
 				INFOPLIST_FILE = UrDailyStep/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shemana.UrDailyStep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UrDailyStep/UrDailyStep-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -385,11 +413,13 @@
 			baseConfigurationReference = F5E3B776456514C81848F94B /* Pods-UrDailyStep.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = D4GMNKX6R5;
 				INFOPLIST_FILE = UrDailyStep/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shemana.UrDailyStep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UrDailyStep/UrDailyStep-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
