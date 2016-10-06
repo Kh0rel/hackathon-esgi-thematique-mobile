@@ -273,9 +273,7 @@
                             <constraint firstItem="RCg-xe-peB" firstAttribute="top" secondItem="agy-fK-TgI" secondAttribute="bottom" id="xdz-Lr-I6M"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="home" id="Cql-AA-RHi">
-                        <inset key="imageInsets" minX="27" minY="27" maxX="27" maxY="27"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="Cql-AA-RHi"/>
                     <connections>
                         <outlet property="tableExercise" destination="p0y-Rj-nyX" id="e2E-5b-qy3"/>
                     </connections>
@@ -441,9 +439,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fil d'actualité" image="actuality" id="2Zg-HH-w0N">
-                        <inset key="imageInsets" minX="27" minY="27" maxX="27" maxY="27"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Fil d'actualité" image="actuality" id="2Zg-HH-w0N"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="COo-SS-c8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -462,9 +458,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Performance" image="perf" id="kKq-Re-aRj">
-                        <inset key="imageInsets" minX="27" minY="27" maxX="27" maxY="27"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Performance" image="perf" id="kKq-Re-aRj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45B-7n-ymU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -483,9 +477,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mon espace" image="me" id="vyU-lc-tHI">
-                        <inset key="imageInsets" minX="27" minY="27" maxX="27" maxY="27"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Mon espace" image="me" id="vyU-lc-tHI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NW9-Ub-mDC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -504,9 +496,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Boutique" image="shop" id="noS-IW-gfn">
-                        <inset key="imageInsets" minX="27" minY="27" maxX="27" maxY="27"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Boutique" image="shop" id="noS-IW-gfn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HxP-di-KPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -554,17 +544,17 @@
     </scenes>
     <resources>
         <image name="Image" width="66" height="62"/>
-        <image name="actuality" width="142" height="142"/>
-        <image name="home" width="142" height="142"/>
-        <image name="me" width="142" height="142"/>
-        <image name="perf" width="142" height="142"/>
+        <image name="actuality" width="16" height="16"/>
+        <image name="home" width="16" height="16"/>
+        <image name="me" width="16" height="16"/>
+        <image name="perf" width="16" height="16"/>
         <image name="picto_allonge" width="125" height="50"/>
         <image name="picto_assis" width="125" height="50"/>
         <image name="picto_debout" width="125" height="50"/>
         <image name="picto_indoor" width="125" height="50"/>
         <image name="picto_outdoor" width="125" height="50"/>
         <image name="picto_transport" width="125" height="50"/>
-        <image name="shop" width="142" height="142"/>
+        <image name="shop" width="16" height="16"/>
         <image name="star" width="29" height="29"/>
     </resources>
 </document>
