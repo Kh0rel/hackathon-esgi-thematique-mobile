@@ -23,6 +23,7 @@
 		F07109A81DA6653A00EE06AD /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F07109A71DA6653A00EE06AD /* YTPlayerView.m */; };
 		F07109AA1DA6655D00EE06AD /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = F07109A91DA6655D00EE06AD /* Assets */; };
 		F07109AC1DA686C600EE06AD /* ExerciseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07109AB1DA686C600EE06AD /* ExerciseItem.swift */; };
+		F0AA35C11DA6D9DD007339AC /* NiveauItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AA35C01DA6D9DD007339AC /* NiveauItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		F07109A71DA6653A00EE06AD /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
 		F07109A91DA6655D00EE06AD /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		F07109AB1DA686C600EE06AD /* ExerciseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseItem.swift; sourceTree = "<group>"; };
+		F0AA35C01DA6D9DD007339AC /* NiveauItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiveauItem.swift; sourceTree = "<group>"; };
 		F5E3B776456514C81848F94B /* Pods-UrDailyStep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrDailyStep.release.xcconfig"; path = "Pods/Target Support Files/Pods-UrDailyStep/Pods-UrDailyStep.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 				2CE517031DA5657800B1D071 /* LaunchScreen.storyboard */,
 				2CE517131DA63CD100B1D071 /* controller */,
 				F07109AB1DA686C600EE06AD /* ExerciseItem.swift */,
+				F0AA35C01DA6D9DD007339AC /* NiveauItem.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			files = (
 				2CE516FD1DA5657800B1D071 /* LoginViewController.swift in Sources */,
 				2CE516FB1DA5657800B1D071 /* AppDelegate.swift in Sources */,
+				F0AA35C11DA6D9DD007339AC /* NiveauItem.swift in Sources */,
 				F07109AC1DA686C600EE06AD /* ExerciseItem.swift in Sources */,
 				F07109A81DA6653A00EE06AD /* YTPlayerView.m in Sources */,
 				2CE5170F1DA63C3900B1D071 /* ProfileViewController.swift in Sources */,
