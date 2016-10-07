@@ -13,6 +13,8 @@
 		2C03B2F01DA69CB500E0FFD4 /* MarketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03B2EF1DA69CB500E0FFD4 /* MarketTableViewCell.swift */; };
 		2C03B2F41DA6A02500E0FFD4 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03B2F31DA6A02500E0FFD4 /* Product.swift */; };
 		2C5D59031DA6470100A0CD75 /* SubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5D59021DA6470100A0CD75 /* SubscribeViewController.swift */; };
+		2CA4BBD01DA79DF000C2E10F /* TagManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4BBCF1DA79DF000C2E10F /* TagManager.swift */; };
+		2CA4BBD21DA79FD100C2E10F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CA4BBD11DA79FD100C2E10F /* GoogleService-Info.plist */; };
 		2CE516FB1DA5657800B1D071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE516FA1DA5657800B1D071 /* AppDelegate.swift */; };
 		2CE516FD1DA5657800B1D071 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE516FC1DA5657800B1D071 /* LoginViewController.swift */; };
 		2CE517001DA5657800B1D071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE516FE1DA5657800B1D071 /* Main.storyboard */; };
@@ -42,6 +44,9 @@
 		2C03B2EF1DA69CB500E0FFD4 /* MarketTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell.swift; sourceTree = "<group>"; };
 		2C03B2F31DA6A02500E0FFD4 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		2C5D59021DA6470100A0CD75 /* SubscribeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
+		2CA4BBCF1DA79DF000C2E10F /* TagManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagManager.swift; sourceTree = "<group>"; };
+		2CA4BBD11DA79FD100C2E10F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2CA4BBD31DA7A27200C2E10F /* DailyStep-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DailyStep-Bridging-Header.h"; sourceTree = "<group>"; };
 		2CE516F71DA5657800B1D071 /* UrDailyStep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrDailyStep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE516FA1DA5657800B1D071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CE516FC1DA5657800B1D071 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +61,6 @@
 		2D60C5FCC00F8160B2BB43A0 /* Pods-UrDailyStep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrDailyStep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UrDailyStep/Pods-UrDailyStep.debug.xcconfig"; sourceTree = "<group>"; };
 		F0143F3C1DA6C6C200AE04E7 /* ExerciseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseObject.swift; sourceTree = "<group>"; };
 		F07109A21DA664F300EE06AD /* ExercisePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisePageViewController.swift; sourceTree = "<group>"; };
-		F07109A51DA6653A00EE06AD /* UrDailyStep-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UrDailyStep-Bridging-Header.h"; sourceTree = "<group>"; };
 		F07109A61DA6653A00EE06AD /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
 		F07109A71DA6653A00EE06AD /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
 		F07109A91DA6655D00EE06AD /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
@@ -107,6 +111,15 @@
 			name = component;
 			sourceTree = "<group>";
 		};
+		2CA4BBCE1DA79DDD00C2E10F /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				2CA4BBCF1DA79DF000C2E10F /* TagManager.swift */,
+				2CA4BBD31DA7A27200C2E10F /* DailyStep-Bridging-Header.h */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
 		2CE516EE1DA5657800B1D071 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +141,8 @@
 		2CE516F91DA5657800B1D071 /* UrDailyStep */ = {
 			isa = PBXGroup;
 			children = (
+				2CA4BBD11DA79FD100C2E10F /* GoogleService-Info.plist */,
+				2CA4BBCE1DA79DDD00C2E10F /* utils */,
 				2C03B2F11DA6A00500E0FFD4 /* models */,
 				F0143F3B1DA6C6B300AE04E7 /* object */,
 				F07109A41DA6652200EE06AD /* lib */,
@@ -201,7 +216,6 @@
 				F07109A91DA6655D00EE06AD /* Assets */,
 				F07109A61DA6653A00EE06AD /* YTPlayerView.h */,
 				F07109A71DA6653A00EE06AD /* YTPlayerView.m */,
-				F07109A51DA6653A00EE06AD /* UrDailyStep-Bridging-Header.h */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -241,7 +255,7 @@
 				TargetAttributes = {
 					2CE516F61DA5657800B1D071 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = H93HXZ7B6R;
+						DevelopmentTeam = D4GMNKX6R5;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -272,6 +286,7 @@
 			files = (
 				2CE517051DA5657800B1D071 /* LaunchScreen.storyboard in Resources */,
 				F07109AA1DA6655D00EE06AD /* Assets in Resources */,
+				2CA4BBD21DA79FD100C2E10F /* GoogleService-Info.plist in Resources */,
 				2CE517021DA5657800B1D071 /* Assets.xcassets in Resources */,
 				2CE517001DA5657800B1D071 /* Main.storyboard in Resources */,
 			);
@@ -334,6 +349,7 @@
 			files = (
 				2C03B2E11DA6890400E0FFD4 /* MarketViewController.swift in Sources */,
 				2CE516FD1DA5657800B1D071 /* LoginViewController.swift in Sources */,
+				2CA4BBD01DA79DF000C2E10F /* TagManager.swift in Sources */,
 				2CE516FB1DA5657800B1D071 /* AppDelegate.swift in Sources */,
 				2C03B2F01DA69CB500E0FFD4 /* MarketTableViewCell.swift in Sources */,
 				2C03B2E71DA6939E00E0FFD4 /* MarketDetailViewController.swift in Sources */,
@@ -473,12 +489,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = H93HXZ7B6R;
+				DEVELOPMENT_TEAM = D4GMNKX6R5;
 				INFOPLIST_FILE = UrDailyStep/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shemana.UrDailyStep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "UrDailyStep/UrDailyStep-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "UrDailyStep/DailyStep-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -490,12 +506,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = H93HXZ7B6R;
+				DEVELOPMENT_TEAM = D4GMNKX6R5;
 				INFOPLIST_FILE = UrDailyStep/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shemana.UrDailyStep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "UrDailyStep/UrDailyStep-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "UrDailyStep/DailyStep-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

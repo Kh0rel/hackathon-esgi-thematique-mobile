@@ -11,7 +11,6 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +23,11 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func login(_ sender: AnyObject) {
+        TagManager.sendEventWithCategory(category: .ButtonClick, action: .login, label: .connection, value: nil)
     }
     
     @IBAction func subscribe(_ sender: AnyObject) {
+        TagManager.sendEventWithCategory(category: .ButtonClick, action: .subscribe, label: .connection, value: nil)
     }
 }
 

@@ -10,6 +10,7 @@ target 'UrDailyStep' do
   pod 'BEMCheckBox'
   pod 'iCarousel'
   pod 'XLPagerTabStrip', :git => 'https://github.com/KelvinJin/XLPagerTabStrip', :branch => 'swift3'
+  pod 'Google/Analytics'
 
   # Pods for UrDailyStep
 

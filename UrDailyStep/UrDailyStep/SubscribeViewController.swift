@@ -43,6 +43,7 @@ class SubscribeViewController: UIViewController {
         alertController.addAction(noAction)
         
         present(alertController, animated: true, completion: nil)
+        TagManager.sendEventWithCategory(category: .ButtonClick, action: .Button, label: .newSubscribe, value: nil)
     }
 
     /*
