@@ -34,8 +34,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 </string>
-			<key>License</key>
-			<string>MIT</string>
 			<key>Title</key>
 			<string>Alamofire</string>
 			<key>Type</key>
@@ -65,8 +63,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 </string>
-			<key>License</key>
-			<string>MIT</string>
 			<key>Title</key>
 			<string>BEMCheckBox</string>
 			<key>Type</key>
@@ -96,8 +92,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 </string>
-			<key>License</key>
-			<string>MIT</string>
 			<key>Title</key>
 			<string>SwiftyJSON</string>
 			<key>Type</key>
@@ -128,8 +122,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 </string>
-			<key>License</key>
-			<string>MIT</string>
 			<key>Title</key>
 			<string>TextFieldEffects</string>
 			<key>Type</key>
@@ -159,8 +151,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 </string>
-			<key>License</key>
-			<string>MIT</string>
 			<key>Title</key>
 			<string>XLPagerTabStrip</string>
 			<key>Type</key>
@@ -191,8 +181,6 @@ freely, subject to the following restrictions:
    misrepresented as being the original software.
    
 3. This notice may not be removed or altered from any source distribution.</string>
-			<key>License</key>
-			<string>zlib</string>
 			<key>Title</key>
 			<string>iCarousel</string>
 			<key>Type</key>

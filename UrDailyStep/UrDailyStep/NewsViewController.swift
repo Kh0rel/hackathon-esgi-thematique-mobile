@@ -7,22 +7,67 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableActivity: UITableView!
     
-    let array:[EventObject] = [
-        EventObject.init(_identifiant: "toto", _location: 1, _position: 2, _level: 2),
-        EventObject.init(_identifiant: "tata", _location: 3, _position: 1, _level: 1),
-        EventObject.init(_identifiant: "titi", _location: 2, _position: 3, _level: 3),
-        EventObject.init(_identifiant: "tutu", _location: 3, _position: 1, _level: 4),
-        ]
+    var array:[EventObject] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let urlCourant = "https://hackathon-esgi.herokuapp.com/api_esgi_hackathon/following/1"
+        Alamofire.request(urlCourant).validate().responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                self.getNews(data: json)
+            case .failure(let error):
+                print(error)
+            }
+        }
         // Do any additional setup after loading the view.
+    }
+    
+    func getNews(data:JSON){
+        print("\(data)")
+        var urlCourant = "https://hackathon-esgi.herokuapp.com/api_esgi_hackathon/news-feed/1"
+        for index in 0...(data["Result"].count-1) {
+            urlCourant.append(",")
+            urlCourant.append(data["Result"][index]["following"].stringValue)
+        }
+        print("\(urlCourant)")
+        
+        Alamofire.request(urlCourant).validate().responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                self.insertValue(data: json)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    func insertValue(data:JSON){
+        print("\(data)")
+        
+        let json = data["Result"]
+        
+        for index in 0...(json.count-1){
+            array.append(
+                EventObject.init(
+                    _identifiant: json[index]["a_idUser"].stringValue,
+                    _location: json[index]["a_idUser"].intValue,
+                    _position: json[index]["a_idUser"].intValue,
+                    _level: json[index]["a_idUser"].intValue))
+        }
+        DispatchQueue.main.async{
+            self.tableActivity.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
