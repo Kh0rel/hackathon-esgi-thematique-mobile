@@ -11,33 +11,31 @@ import iCarousel
 
 class MarketDetailViewController: UIViewController,iCarouselDataSource, iCarouselDelegate {
     
-    @IBOutlet weak var productNameLabel: UILabel!
-    @IBOutlet weak var productDescribeArea: UITextView!
 
-    @IBOutlet weak var productQuantityLeftLabel: UILabel!
-    @IBOutlet weak var productQuantityWish: UITextField!
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
     
     @IBOutlet weak var carousel: iCarousel!
+    @IBOutlet weak var productNameLabel: UILabel!
+    @IBOutlet weak var ProductDescribeArea: UITextView!
+    @IBOutlet weak var productQuantityLeftLabel: UILabel!
+    @IBOutlet weak var productQuantityWish: UITextField!
+    
+    
     var product:Product?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         carousel.type = .rotary
         productNameLabel.text = product?.name
-        productDescribeArea.text = product?.describe
+        ProductDescribeArea.text = product?.describe
         if let quantityLeft = product?.quantityLeft {
             productQuantityLeftLabel.text = "\(quantityLeft)"
         }
-        
-        
-        
-        
-        
-        // Do any additional setup after loading the view.
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         carousel.reloadData()
     }

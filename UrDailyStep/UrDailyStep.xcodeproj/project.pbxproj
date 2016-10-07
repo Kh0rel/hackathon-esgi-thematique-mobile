@@ -84,6 +84,9 @@
 		2C03B2EE1DA69C9600E0FFD4 /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				F07109AB1DA686C600EE06AD /* ExerciseItem.swift */,
+				F0AA35C01DA6D9DD007339AC /* NiveauItem.swift */,
+				F0AA35C21DA6DF97007339AC /* ActualityItem.swift */,
 				2C03B2EF1DA69CB500E0FFD4 /* MarketTableViewCell.swift */,
 			);
 			name = cell;
@@ -126,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				2C03B2F11DA6A00500E0FFD4 /* models */,
+				F0143F3B1DA6C6B300AE04E7 /* object */,
+				F07109A41DA6652200EE06AD /* lib */,
 				2CE517121DA63CCB00B1D071 /* view */,
 				2CE516FA1DA5657800B1D071 /* AppDelegate.swift */,
 				2CE517011DA5657800B1D071 /* Assets.xcassets */,
@@ -141,9 +146,6 @@
 				2CE516FE1DA5657800B1D071 /* Main.storyboard */,
 				2CE517031DA5657800B1D071 /* LaunchScreen.storyboard */,
 				2CE517131DA63CD100B1D071 /* controller */,
-				F07109AB1DA686C600EE06AD /* ExerciseItem.swift */,
-				F0AA35C01DA6D9DD007339AC /* NiveauItem.swift */,
-				F0AA35C21DA6DF97007339AC /* ActualityItem.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -160,6 +162,7 @@
 				2C5D59021DA6470100A0CD75 /* SubscribeViewController.swift */,
 				2C03B2E01DA6890400E0FFD4 /* MarketViewController.swift */,
 				2C03B2E61DA6939E00E0FFD4 /* MarketDetailViewController.swift */,
+				F07109A21DA664F300EE06AD /* ExercisePageViewController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -289,7 +292,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		5E41C5656AFDEBF110B8CD07 /* [CP] Copy Pods Resources */ = {
@@ -335,6 +338,10 @@
 				2C03B2F01DA69CB500E0FFD4 /* MarketTableViewCell.swift in Sources */,
 				2C03B2E71DA6939E00E0FFD4 /* MarketDetailViewController.swift in Sources */,
 				2C03B2F41DA6A02500E0FFD4 /* Product.swift in Sources */,
+				F0AA35C11DA6D9DD007339AC /* NiveauItem.swift in Sources */,
+				F07109AC1DA686C600EE06AD /* ExerciseItem.swift in Sources */,
+				F07109A81DA6653A00EE06AD /* YTPlayerView.m in Sources */,
+				F0AA35C31DA6DF97007339AC /* ActualityItem.swift in Sources */,
 				2CE5170F1DA63C3900B1D071 /* ProfileViewController.swift in Sources */,
 				2C5D59031DA6470100A0CD75 /* SubscribeViewController.swift in Sources */,
 				2CE517111DA63CC500B1D071 /* NewsViewController.swift in Sources */,
@@ -471,7 +478,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shemana.UrDailyStep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "UrDailyStep/UrDailyStep-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -487,7 +495,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shemana.UrDailyStep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "UrDailyStep/UrDailyStep-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

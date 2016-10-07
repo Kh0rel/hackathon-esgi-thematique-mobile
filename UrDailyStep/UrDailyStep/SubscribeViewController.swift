@@ -7,14 +7,27 @@
 //
 
 import UIKit
-
+import BEMCheckBox
 class SubscribeViewController: UIViewController {
 
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var firstnameField: UITextField!
+    @IBOutlet weak var ageField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var matinCheckBox: BEMCheckBox!
+    @IBOutlet weak var midiCheckBox: BEMCheckBox!
+    @IBOutlet weak var afternoonCheckBox: BEMCheckBox!
+    @IBOutlet weak var soirCheckbox: BEMCheckBox!
+    @IBOutlet weak var actuSwift: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
